@@ -25,9 +25,9 @@ class Car
         else
          this.speed=newspeed;
     }
-    break()
+    brake()
     {
-        console.log("Car is stopped after break");
+        console.log("Car is stopped after brake");
         this.speed=0;
     }
     status()
@@ -48,5 +48,5 @@ console.log("After Deceleration of 20kmph");
 c1.decelerate(20);
 c1.status();
 console.log("After Break");
-c1.break();
+c1.brake();
 c1.status();

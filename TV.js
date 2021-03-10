@@ -6,6 +6,10 @@ class TV
        this.channel=80;
        this.volume=20;
    }
+//    set channel(c)
+//    {
+//        this.channel=c;
+//    }
    reset()
    {
        this.channel=80;
@@ -42,7 +46,7 @@ class TV
 let tv1=new TV('Samsung');
 tv1.status();
 tv1.changechannel(50);
-// tv1.volume=101;
+tv1.channel=10;
 console.log("\nAfter increasing volume\n");
 tv1.increaseVol(20);
 tv1.status();
