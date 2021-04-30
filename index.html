@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+    <script src="crud.js"></script>
+    <style>
+        body{
+            background-color:#000;
+        }
+        .container
+        {
+            box-sizing: border-box;
+            margin-top: 15vh;
+            border: 5px solid #ddd;
+            padding: 2.5%;
+            background-color:#fff;
+        }
+    </style>
+</head>
+<body onload="readUser()">
+   <div class="container">
+    <input class="form-control" type="text" id="uname" placeholder="Username"><br>
+    <input class="form-control" type="text" id="email" placeholder="Email"><br>
+    <div class="row">
+        <button class="form-control btn-primary col-lg-4 mr-5" onclick="createUser()">Register</butvwton>
+        <!-- <button class="form-control btn-primary col-lg-4" onclick="readUser()">read</button> -->
+        <button class="form-control btn-primary col-lg-4" onclick="updateUser()">update</button>
+    </div>
+    <br>
+    <div id="userList"></div>
+    </div>
+</body>
+</html>
+
